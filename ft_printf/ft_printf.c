@@ -6,7 +6,7 @@
 /*   By: yxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/15 09:13:25 by yxie              #+#    #+#             */
-/*   Updated: 2019/07/15 12:30:14 by yxie             ###   ########.fr       */
+/*   Updated: 2019/07/15 12:35:50 by yxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_printf(const char * restrict format, ...)
 	{
 		if (*format == '%')
 		{
-			
+			ft_putstr(format);	
 		}
 		else
 			ft_putchar(*format);
