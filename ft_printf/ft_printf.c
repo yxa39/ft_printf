@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+
+char	*get_str(char *format, va_list *ap)
+{
+	int	a;
+
+	a = va_arg(*ap, int);
+
+	format++;
+	return (ft_itoa(a));
+}
+
 int	ft_printf(const char * restrict format, ...)
 {
 	va_list	ap;
@@ -23,7 +34,7 @@ int	ft_printf(const char * restrict format, ...)
 	{
 		if (*format == '%')
 		{
-			ft_putstr(format);	
+			ft_putstr(get_str((char *)format, &ap));
 		}
 		else
 			ft_putchar(*format);

@@ -12,8 +12,6 @@
 #include "test.h"
 int	main()
 {
-	char *str = {"ab%cd" "efggg"};
-
-	ft_printf(str);
+	ft_printf("abc%s", "ABC");
 	return (0);
 }
