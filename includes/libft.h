@@ -6,7 +6,7 @@
 /*   By: yxie <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/05 15:38:10 by yxie              #+#    #+#             */
-/*   Updated: 2019/07/15 11:51:18 by yxie             ###   ########.fr       */
+/*   Updated: 2019/07/18 11:31:48 by yxie             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 # include <fcntl.h>
 # include <stdarg.h>
 # define BUFF_SIZE 100
+# define NUMERALS "0123456789abcdef"
+# define NUMERALS_CAP "0123456789ABCDEF"
 
 int					ft_printf(const char * restrict format, ...);
 int					get_next_line(const int fd, char **line);
