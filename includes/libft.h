@@ -21,7 +21,10 @@
 # define NUMERALS "0123456789abcdef"
 # define NUMERALS_CAP "0123456789ABCDEF"
 
-int					ft_printf(const char * restrict format, ...);
+
+char				*ft_llitoa(long long int n);
+int					get_long_strlen(long long int n);
+int					ft_printf(char *format, ...);
 int					get_next_line(const int fd, char **line);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);

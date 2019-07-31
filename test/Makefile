@@ -24,7 +24,7 @@ all: $(NAME)
 
 $(NAME):
 	@make re -C .././
-	@gcc $(CC_FLAGS) $(SRCS)  -o $(NAME) $(LFT_FLAGS)
+	@gcc $(SRCS)  -o $(NAME) $(LFT_FLAGS)
 
 fclean:
 	@rm -f $(NAME)
