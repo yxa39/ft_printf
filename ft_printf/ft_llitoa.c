@@ -21,15 +21,13 @@ char	*ft_llitoa(long long int n)
 
 	len = get_long_strlen(n);
 	new_n = n;
-	if (n < 0)
-	{
-		new_n = -n;
-		len++;
-	}
 	if (!(str = ft_strnew(len)))
 		return (NULL);
 	if (n < 0)
-		*str = '-';
+	{
+		new_n = -n;
+		str[0] = '-';
+	}
 	str[--len] = new_n % 10 + '0';
 	while (new_n /= 10)
 		str[--len] = new_n % 10 + '0';
